@@ -11,38 +11,38 @@
 ```vue
 <template>
   <div style="margin-bottom:20px;">
-    <mocbutton color="blue">主要按钮</mocbutton>
-    <mocbutton color="green">绿色按钮</mocbutton>
-    <mocbutton color="gray">灰色按钮</mocbutton>
-    <mocbutton color="yellow">黄色按钮</mocbutton>
-    <mocbutton color="red">红色按钮</mocbutton>
+    <moc-button color="blue">主要按钮</moc-button>
+    <moc-button color="green">绿色按钮</moc-button>
+    <moc-button color="gray">灰色按钮</moc-button>
+    <moc-button color="yellow">黄色按钮</moc-button>
+    <moc-button color="red">红色按钮</moc-button>
   </div>
   <div style="margin-bottom:20px;"
   >
-    <mocbutton color="blue" plain>朴素按钮</mocbutton>
-    <mocbutton color="green" plain>绿色按钮</mocbutton>
-    <mocbutton color="gray" plain>灰色按钮</mocbutton>
-    <mocbutton color="yellow" plain>黄色按钮</mocbutton>
-    <mocbutton color="red" plain>红色按钮</mocbutton>
+    <moc-button color="blue" plain>朴素按钮</moc-button>
+    <moc-button color="green" plain>绿色按钮</moc-button>
+    <moc-button color="gray" plain>灰色按钮</moc-button>
+    <moc-button color="yellow" plain>黄色按钮</moc-button>
+    <moc-button color="red" plain>红色按钮</moc-button>
   </div>
   <div style="margin-bottom:20px;">
-    <mocbutton size="small" plain>小按钮</mocbutton>
-    <mocbutton size="medium" plain>中按钮</mocbutton>
-    <mocbutton size="large" plain>大按钮</mocbutton>
+    <moc-button size="small" plain>小按钮</moc-button>
+    <moc-button size="medium" plain>中按钮</moc-button>
+    <moc-button size="large" plain>大按钮</moc-button>
   </div>
   <div style="margin-bottom:20px;">
-    <mocbutton color="blue" round plain icon="search">搜索按钮</mocbutton>
-    <mocbutton color="green" round plain icon="edit">编辑按钮</mocbutton>
-    <mocbutton color="gray" round plain icon="check">成功按钮</mocbutton>
-    <mocbutton color="yellow" round plain icon="message">提示按钮</mocbutton>
-    <mocbutton color="red" round plain icon="delete">删除按钮</mocbutton>
+    <moc-button color="blue" round plain icon="search">搜索按钮</moc-button>
+    <moc-button color="green" round plain icon="edit">编辑按钮</moc-button>
+    <moc-button color="gray" round plain icon="check">成功按钮</moc-button>
+    <moc-button color="yellow" round plain icon="message">提示按钮</moc-button>
+    <moc-button color="red" round plain icon="delete">删除按钮</moc-button>
   </div>
   <div style="margin-bottom:20px;">
-    <mocbutton color="blue" round plain icon="search"></mocbutton>
-    <mocbutton color="green" round plain icon="edit"></mocbutton>
-    <mocbutton color="gray" round plain icon="check"></mocbutton>
-    <mocbutton color="yellow" round plain icon="message"></mocbutton>
-    <mocbutton color="red" round plain icon="delete"></mocbutton>
+    <moc-button color="blue" round plain icon="search"></moc-button>
+    <moc-button color="green" round plain icon="edit"></moc-button>
+    <moc-button color="gray" round plain icon="check"></moc-button>
+    <moc-button color="yellow" round plain icon="message"></moc-button>
+    <moc-button color="red" round plain icon="delete"></moc-button>
   </div>
 </template>
 ```
@@ -58,10 +58,10 @@
 ```vue
 <template>
   <div class="flex flex-row">
-    <mocbutton icon="edit" plain></mocbutton>
-    <mocbutton icon="delete" plain></mocbutton>
-    <mocbutton icon="share" plain></mocbutton>
-    <mocbutton round plain icon="search">搜索</mocbutton>
+    <moc-button icon="edit" plain></moc-button>
+    <moc-button icon="delete" plain></moc-button>
+    <moc-button icon="share" plain></moc-button>
+    <moc-button round plain icon="search">搜索</moc-button>
   </div>
 </template>
 ```

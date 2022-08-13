@@ -26,7 +26,7 @@ import Vue from "vue";
 import MoUI from "moc-ui";
 
 const App = {
-  template: `<mocbutton>按钮</mocbutton>`,
+  template: `<moc-button>按钮</moc-button>`,
 };
 
 createApp(App).use(MoUI).mount("#app");
