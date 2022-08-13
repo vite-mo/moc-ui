@@ -24,7 +24,8 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: "terser",
+    // minify: "terser",
+    minify: false,
     sourcemap: true, // 输出单独 source文件
     // brotliSize: true, // 生成压缩大小报告
     reportCompressedSize: true,

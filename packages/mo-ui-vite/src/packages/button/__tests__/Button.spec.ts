@@ -33,7 +33,6 @@ describe("color", () => {
         color: "red",
       },
     });
-    console.log(wrapper.classes());
     expect(wrapper.classes().includes("bg-red-500")).toBe(true);
   });
 });
