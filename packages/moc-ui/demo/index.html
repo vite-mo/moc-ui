@@ -1,20 +1,50 @@
-<h1>Demo</h1>
+<h1>Demo IFFE OnDemand</h1>
 <div id="app"></div>
-<script type="module">
-  import { createApp } from "vue/dist/vue.esm-bundler.js";
-  import MoUI, {
-    SFCButton,
-    JSXButton,
-    MyButton,
-  } from "../dist/moc-ui.mjs";
-
-  createApp({
-    template: `
-      <SButton/>
-      <JSXButton/>
-      <SFCButton/>
-    `,
-  })
-    .use(MoUI)
-    .mount("#app");
+<link rel="stylesheet" href="../dist/style.css" />
+<script src="../node_modules/vue/dist/vue.global.js"></script>
+<script src="../dist/button/index.iife.js"></script>
+<script>
+      const { createApp } = Vue
+      console.log('vue', Vue)
+      console.log('MocUI', Button)
+      createApp({
+          template: `
+          <div style="margin-bottom:20px;">
+              <moc-button color="blue">主要按钮</moc-button>
+              <moc-button color="green">绿色按钮</moc-button>
+              <moc-button color="gray">灰色按钮</moc-button>
+              <moc-button color="yellow">黄色按钮</moc-button>
+              <moc-button color="red">红色按钮</moc-button>
+          </div>
+          <div style="margin-bottom:20px;"
+          >
+              <moc-button color="blue" plain>朴素按钮</moc-button>
+              <moc-button color="green" plain>绿色按钮</moc-button>
+              <moc-button color="gray" plain>灰色按钮</moc-button>
+              <moc-button color="yellow" plain>黄色按钮</moc-button>
+              <moc-button color="red" plain>红色按钮</moc-button>
+          </div>
+          <div style="margin-bottom:20px;">
+              <moc-button size="small" plain>小按钮</moc-button>
+              <moc-button size="medium" plain>中按钮</moc-button>
+              <moc-button size="large" plain>大按钮</moc-button>
+          </div>
+          <div style="margin-bottom:20px;">
+              <moc-button color="blue" round plain icon="search">搜索按钮</moc-button>
+              <moc-button color="green" round plain icon="edit">编辑按钮</moc-button>
+              <moc-button color="gray" round plain icon="check">成功按钮</moc-button>
+              <moc-button color="yellow" round plain icon="message">提示按钮</moc-button>
+              <moc-button color="red" round plain icon="delete">删除按钮</moc-button>
+          </div>
+          <div style="margin-bottom:20px;">
+              <moc-button color="blue" round plain icon="search"></moc-button>
+              <moc-button color="green" round plain icon="edit"></moc-button>
+              <moc-button color="gray" round plain icon="check"></moc-button>
+              <moc-button color="yellow" round plain icon="message"></moc-button>
+              <moc-button color="red" round plain icon="delete"></moc-button>
+          </div>
+      `
+      })
+          .use(Button.default)
+          .mount('#app')
 </script>
