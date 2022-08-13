@@ -1,22 +1,22 @@
 import { createApp } from "vue/dist/vue.esm-browser";
 import "uno.css";
-import MoUI from "./packages";
+import MoUI from "./entry";
 
 createApp({
   template: `
            <div>
-              <mocbutton color="blue">蓝色按钮</mocbutton>
-              <mocbutton color="green">绿色按钮</mocbutton>
-              <mocbutton color="gray">灰色按钮</mocbutton>
-              <mocbutton color="yellow">黄色按钮</mocbutton>
-              <mocbutton color="red">红色按钮</mocbutton>
+              <moc-button color="blue">蓝色按钮</moc-button>
+              <moc-button color="green">绿色按钮</moc-button>
+              <moc-button color="gray">灰色按钮</moc-button>
+              <moc-button color="yellow">黄色按钮</moc-button>
+              <moc-button color="red">红色按钮</moc-button>
            </div>
        <div>
-           <mocbutton color="blue" round plain icon="search" ></mocbutton>
-           <mocbutton color="green" round plain icon="edit" ></mocbutton>
-           <mocbutton color="gray" round plain icon="check" ></mocbutton>
-           <mocbutton color="yellow" round plain icon="message" ></mocbutton>
-           <mocbutton color="red" round plain icon="delete" ></mocbutton>
+           <moc-button color="blue" round plain icon="search" ></moc-button>
+           <moc-button color="green" round plain icon="edit" ></moc-button>
+           <moc-button color="gray" round plain icon="check" ></moc-button>
+           <moc-button color="yellow" round plain icon="message" ></moc-button>
+           <moc-button color="red" round plain icon="delete" ></moc-button>
        </div>
           `,
 })
