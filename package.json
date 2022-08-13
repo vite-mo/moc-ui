@@ -1,5 +1,5 @@
 {
-  "name": "mo-fe-admin",
+  "name": "moc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vite-mo/mo-ui-vite.git"
+    "url": "git+https://github.com/vite-mo/moc-ui.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vite-mo/mo-ui-vite/issues"
+    "url": "https://github.com/vite-mo/moc-ui/issues"
   },
-  "homepage": "https://mo-ui-vite.vercel.app/#quick-start",
+  "homepage": "https://moc-ui.vercel.app/#quick-start",
   "devDependencies": {
     "husky": "^7.0.4"
   },

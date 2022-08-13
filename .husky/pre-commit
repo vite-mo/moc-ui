@@ -3,7 +3,7 @@
 
 
 echo ====代码静态检查====
-cd packages/mo-ui
+cd packages/moc-ui
 pnpm lint
 
 cd ../../

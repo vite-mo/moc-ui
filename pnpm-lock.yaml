@@ -17,13 +17,13 @@ importers:
 
   packages/docs-vite:
     specifiers:
-      mo-ui: workspace:^1.0.0
+      moc-ui: workspace:^1.0.0
       vue: ^3.2.37
     dependencies:
-      mo-ui: link:../mo-ui
+      moc-ui: link:../moc-ui
       vue: 3.2.37
 
-  packages/mo-ui:
+  packages/moc-ui:
     specifiers:
       '@commitlint/cli': ^17.0.3
       '@commitlint/config-conventional': ^17.0.3
