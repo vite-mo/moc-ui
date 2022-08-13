@@ -30,10 +30,10 @@ describe("color", () => {
         default: "Button",
       },
       props: {
-        color: 'red'
-      }
+        color: "red",
+      },
     });
-    console.log(wrapper.classes())
+    console.log(wrapper.classes());
     expect(wrapper.classes().includes("bg-red-500")).toBe(true);
   });
 });
