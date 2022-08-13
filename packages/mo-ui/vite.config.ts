@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig, Plugin, UserConfig } from "vite";
+import { defineConfig, Plugin,UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import UnoCss from "./config/unocss";
@@ -12,11 +12,9 @@ const rollupOptions = {
   },
 };
 
-// https://vitejs.dev/config/
-
-export default defineConfig({
+export const config = {
   plugins: [
-    vue() as Plugin,
+    vue(),
     // 添加JSX插件
     vueJsx() as Plugin,
 
@@ -24,16 +22,15 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: "terser",
+    minify: false, // boolean | 'terser' | 'esbuild'
     sourcemap: true, // 输出单独 source文件
     // brotliSize: true, // 生成压缩大小报告
     reportCompressedSize: true,
     lib: {
-      entry: "./src/packages/index.ts",
-      name: "MoUI",
+      entry: "./src/entry.ts",
+      name: "MoUIVite",
       fileName: "mo-ui",
-      // 导出模块格式
-      formats: ["es", "umd", "iife"],
+      formats: ["es", "umd", "iife"], // 导出模块类型
     },
     outDir: "./dist",
   },
@@ -42,10 +39,14 @@ export default defineConfig({
     globals: true,
     // simulate DOM with happy-dom
     // (requires installing happy-dom as a peer dependency)
-    environment: 'happy-dom',
+    environment: "happy-dom",
     // environment: "jsdom",
+    // 支持tsx组件，很关键
     transformMode: {
-        web: [/.[tj]sx$/],
-    }
+      web: [/.[tj]sx$/],
+    },
   },
-});
+};
+
+// https://vitejs.dev/config/
+export default defineConfig(config as UserConfig);

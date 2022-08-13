@@ -1,6 +1,6 @@
 import Theme from 'vitepress/dist/client/theme-default'
 // import Button from '../../../src/button'
-import MoUI from '../../../src/packages'
+import MoUI from '../../../src/entry'
 
 // 主题样式
 import 'vitepress-theme-demoblock/theme/styles/index.css'

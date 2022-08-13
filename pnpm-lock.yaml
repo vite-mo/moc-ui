@@ -1,68 +1,94 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@commitlint/cli': ^17.0.3
-  '@commitlint/config-conventional': ^17.0.3
-  '@iconify-json/ic': ^1.1.8
-  '@testing-library/vue': ^6.6.1
-  '@types/node': ^18.7.2
-  '@typescript-eslint/eslint-plugin': ^5.33.0
-  '@typescript-eslint/parser': ^5.33.0
-  '@unocss/preset-attributify': ^0.35.1
-  '@unocss/preset-icons': ^0.30.10
-  '@unocss/preset-uno': ^0.35.1
-  '@vitejs/plugin-vue': ^3.0.1
-  '@vitejs/plugin-vue-jsx': ^2.0.0
-  '@vue/eslint-config-prettier': ^7.0.0
-  '@vue/test-utils': ^2.0.2
-  babel-eslint: ^10.1.0
-  eslint: ^8.21.0
-  eslint-formatter-pretty: ^4.1.0
-  eslint-plugin-json: ^3.1.0
-  eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-vue: ^9.3.0
-  happy-dom: ^6.0.4
-  husky: ^8.0.1
-  prettier: ^2.7.1
-  unocss: ^0.33.4
-  vite: ^3.0.5
-  vitepress: ^0.22.4
-  vitepress-theme-demoblock: ^1.4.2
-  vitest: ^0.21.1
-  vue: ^3.2.37
+importers:
 
-dependencies:
-  '@commitlint/cli': 17.0.3
-  '@commitlint/config-conventional': 17.0.3
-  '@typescript-eslint/eslint-plugin': 5.33.0_njno5y7ry2l2lcmiu4tywxkwnq
-  '@typescript-eslint/parser': 5.33.0_qugx7qdu5zevzvxaiqyxfiwquq
-  '@vitejs/plugin-vue': 3.0.3_vite@3.0.7+vue@3.2.37
-  '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.7+vue@3.2.37
-  '@vue/eslint-config-prettier': 7.0.0_po3yoeeutu52wwqsoi2mwzccke
-  babel-eslint: 10.1.0_eslint@8.21.0
-  eslint: 8.21.0
-  eslint-formatter-pretty: 4.1.0
-  eslint-plugin-json: 3.1.0
-  eslint-plugin-prettier: 4.2.1_po3yoeeutu52wwqsoi2mwzccke
-  eslint-plugin-vue: 9.3.0_eslint@8.21.0
-  husky: 8.0.1
-  prettier: 2.7.1
-  vite: 3.0.7
-  vue: 3.2.37
+  .:
+    specifiers:
+      '@commitlint/cli': ^17.0.2
+      '@commitlint/config-conventional': ^17.0.2
+      husky: ^7.0.4
+      vite: ^3.0.7
+    dependencies:
+      '@commitlint/cli': 17.0.3
+      '@commitlint/config-conventional': 17.0.3
+      vite: 3.0.7
+    devDependencies:
+      husky: 7.0.4
 
-devDependencies:
-  '@iconify-json/ic': 1.1.8
-  '@testing-library/vue': 6.6.1_2yymnzrok6eda47acnj2yjm3ae
-  '@types/node': 18.7.2
-  '@unocss/preset-attributify': 0.35.4
-  '@unocss/preset-icons': 0.30.13
-  '@unocss/preset-uno': 0.35.4
-  '@vue/test-utils': 2.0.2_vue@3.2.37
-  happy-dom: 6.0.4
-  unocss: 0.33.5_vite@3.0.7
-  vitepress: 0.22.4_rffayjtpljlgiggpouh2oetqji
-  vitepress-theme-demoblock: 1.4.2_wcqkhtmu7mswc6yz4uyexck3ty
-  vitest: 0.21.1_happy-dom@6.0.4
+  packages/docs-vite:
+    specifiers:
+      mo-ui: workspace:^1.0.0
+      vue: ^3.2.37
+    dependencies:
+      mo-ui: link:../mo-ui
+      vue: 3.2.37
+
+  packages/mo-ui:
+    specifiers:
+      '@commitlint/cli': ^17.0.3
+      '@commitlint/config-conventional': ^17.0.3
+      '@iconify-json/ic': ^1.1.8
+      '@testing-library/vue': ^6.6.1
+      '@types/fs-extra': ^9.0.13
+      '@types/node': ^18.7.2
+      '@typescript-eslint/eslint-plugin': ^5.33.0
+      '@typescript-eslint/parser': ^5.33.0
+      '@unocss/preset-attributify': ^0.35.1
+      '@unocss/preset-icons': ^0.30.10
+      '@unocss/preset-uno': ^0.35.1
+      '@vitejs/plugin-vue': ^3.0.1
+      '@vitejs/plugin-vue-jsx': ^2.0.0
+      '@vue/eslint-config-prettier': ^7.0.0
+      '@vue/test-utils': ^2.0.2
+      babel-eslint: ^10.1.0
+      eslint: ^8.21.0
+      eslint-formatter-pretty: ^4.1.0
+      eslint-plugin-json: ^3.1.0
+      eslint-plugin-prettier: ^4.2.1
+      eslint-plugin-vue: ^9.3.0
+      fs-extra: ^10.1.0
+      happy-dom: ^6.0.4
+      husky: ^8.0.1
+      prettier: ^2.7.1
+      unocss: ^0.33.4
+      vite: ^3.0.5
+      vitepress: ^0.22.4
+      vitepress-theme-demoblock: ^1.4.2
+      vitest: ^0.21.1
+      vue: ^3.2.37
+    dependencies:
+      '@commitlint/cli': 17.0.3
+      '@commitlint/config-conventional': 17.0.3
+      '@typescript-eslint/eslint-plugin': 5.33.0_njno5y7ry2l2lcmiu4tywxkwnq
+      '@typescript-eslint/parser': 5.33.0_qugx7qdu5zevzvxaiqyxfiwquq
+      '@vitejs/plugin-vue': 3.0.3_vite@3.0.7+vue@3.2.37
+      '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.7+vue@3.2.37
+      '@vue/eslint-config-prettier': 7.0.0_po3yoeeutu52wwqsoi2mwzccke
+      babel-eslint: 10.1.0_eslint@8.21.0
+      eslint: 8.21.0
+      eslint-formatter-pretty: 4.1.0
+      eslint-plugin-json: 3.1.0
+      eslint-plugin-prettier: 4.2.1_po3yoeeutu52wwqsoi2mwzccke
+      eslint-plugin-vue: 9.3.0_eslint@8.21.0
+      fs-extra: 10.1.0
+      husky: 8.0.1
+      prettier: 2.7.1
+      vite: 3.0.7
+      vue: 3.2.37
+    devDependencies:
+      '@iconify-json/ic': 1.1.9
+      '@testing-library/vue': 6.6.1_2yymnzrok6eda47acnj2yjm3ae
+      '@types/fs-extra': 9.0.13
+      '@types/node': 18.7.2
+      '@unocss/preset-attributify': 0.35.4
+      '@unocss/preset-icons': 0.30.13
+      '@unocss/preset-uno': 0.35.4
+      '@vue/test-utils': 2.0.2_vue@3.2.37
+      happy-dom: 6.0.4
+      unocss: 0.33.5_vite@3.0.7
+      vitepress: 0.22.4_rffayjtpljlgiggpouh2oetqji
+      vitepress-theme-demoblock: 1.4.2_wcqkhtmu7mswc6yz4uyexck3ty
+      vitest: 0.21.1_happy-dom@6.0.4
 
 packages:
 
@@ -776,8 +802,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: false
 
-  /@iconify-json/ic/1.1.8:
-    resolution: {integrity: sha512-z7wF/a4wldA+6LVShp8rDCTd3zK/IovKCIdHuiTe5xgxzi9GdnexmZCZbMFol5JqgE1cFDveygTE9wtpfGq3tw==}
+  /@iconify-json/ic/1.1.9:
+    resolution: {integrity: sha512-yRHx4AnNNf5kpWVnNMaeXGYnLmaR2tkGsjSc//FaI7LhljUaDkiawUvmnYbjh6M61O78EeEoNk8HgYJVqb+y8A==}
     dependencies:
       '@iconify/types': 1.1.0
     dev: true
@@ -955,6 +981,12 @@ packages:
 
   /@types/form-data/0.0.33:
     resolution: {integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==}
+    dependencies:
+      '@types/node': 18.7.2
+    dev: true
+
+  /@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
       '@types/node': 18.7.2
     dev: true
@@ -2888,6 +2920,12 @@ packages:
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+
+  /husky/7.0.4:
+    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dev: true
 
   /husky/8.0.1:
     resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
