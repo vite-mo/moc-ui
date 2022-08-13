@@ -1,8 +1,7 @@
 name: Publish moc-ui To Npm
-​
 on:
   push:
-    branches: 
+    branches:
       - publish
   pull_request:
     branches:
