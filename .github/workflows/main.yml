@@ -26,6 +26,6 @@ jobs:
 
     - name: Install modules
       run: pnpm install
-      
+
     - name: Run Test
       run: pnpm run test:run
