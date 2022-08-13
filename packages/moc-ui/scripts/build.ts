@@ -36,7 +36,7 @@ const buildAll = async () => {
       fs.outputFile(
         path.resolve(outDir, `package.json`),
         `{
-          "name": "mo-ui/${name}",
+          "name": "moc-ui/${name}",
           "main": "index.umd.js",
           "module": "index.umd.js"
 }`,

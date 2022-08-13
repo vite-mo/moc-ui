@@ -1,4 +1,4 @@
-# 🔨 Mo-UI 是什么?
+# 🔨 Moc-UI 是什么?
 
 一个 Mini 版的组件库，基于 Vite 栈。
 
@@ -16,17 +16,17 @@
 ## Install
 
 ```bash
-npm i mo-ui
+npm i moc-ui
 ```
 
 ## Quick Start
 
 ```js
 import Vue from "vue";
-import MoUI from "mo-ui";
+import MoUI from "moc-ui";
 
 const App = {
-  template: `<mo-button>按钮</mo-button>`,
+  template: `<mocbutton>按钮</mocbutton>`,
 };
 
 createApp(App).use(MoUI).mount("#app");

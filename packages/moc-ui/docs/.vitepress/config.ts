@@ -15,7 +15,7 @@ const sidebar = {
     ],
   };
   const config = {
-    title: "🔨  Mo-UI",
+    title: "🔨  Moc-UI",
     description: "",
     themeConfig: {
       sidebar,

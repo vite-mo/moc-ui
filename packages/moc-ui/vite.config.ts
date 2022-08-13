@@ -29,7 +29,7 @@ export const config = {
     lib: {
       entry: "./src/entry.ts",
       name: "MoUIVite",
-      fileName: "mo-ui",
+      fileName: "moc-ui",
       formats: ["es", "umd", "iife"], // 导出模块类型
     },
     outDir: "./dist",
