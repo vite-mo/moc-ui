@@ -50,6 +50,7 @@ importers:
       happy-dom: ^6.0.4
       husky: ^8.0.1
       prettier: ^2.7.1
+      ts-node: ^10.9.1
       unocss: ^0.33.4
       vite: ^3.0.5
       vitepress: ^0.22.4
@@ -73,6 +74,7 @@ importers:
       fs-extra: 10.1.0
       husky: 8.0.1
       prettier: 2.7.1
+      ts-node: 10.9.1_tyvfw3xlkeib37wbsln4bvkpbm
       vite: 3.0.7
       vue: 3.2.37
     devDependencies:
@@ -89,6 +91,9 @@ importers:
       vitepress: 0.22.4_rffayjtpljlgiggpouh2oetqji
       vitepress-theme-demoblock: 1.4.2_wcqkhtmu7mswc6yz4uyexck3ty
       vitest: 0.21.1_happy-dom@6.0.4
+
+  packages/moc-ui/dist/Button:
+    specifiers: {}
 
 packages:
 
