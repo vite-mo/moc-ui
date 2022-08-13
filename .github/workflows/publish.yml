@@ -16,7 +16,7 @@ jobs:
     environment: npm
     steps:
       - name: Checkout Git Source
-          uses: actions/checkout@master
+        uses: actions/checkout@master
 
       - name: Pnpm Action
         uses: pnpm/action-setup@v2.1.0
