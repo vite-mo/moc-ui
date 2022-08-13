@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/vite-mo/mo-ui-vite/issues"
   },
-  "homepage": "https://github.com/vite-mo/mo-ui-vite#readme",
+  "homepage": "https://mo-ui-vite.vercel.app/#quick-start",
   "devDependencies": {
     "husky": "^7.0.4"
   },
