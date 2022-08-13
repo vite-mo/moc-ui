@@ -17,18 +17,19 @@ importers:
 
   packages/docs-vite:
     specifiers:
-      mo-ui-vite: workspace:^1.0.0
+      mo-ui: workspace:^1.0.0
       vue: ^3.2.37
     dependencies:
-      mo-ui-vite: link:../mo-ui-vite
+      mo-ui: link:../mo-ui
       vue: 3.2.37
 
-  packages/mo-ui-vite:
+  packages/mo-ui:
     specifiers:
       '@commitlint/cli': ^17.0.3
       '@commitlint/config-conventional': ^17.0.3
       '@iconify-json/ic': ^1.1.8
       '@testing-library/vue': ^6.6.1
+      '@types/fs-extra': ^9.0.13
       '@types/node': ^18.7.2
       '@typescript-eslint/eslint-plugin': ^5.33.0
       '@typescript-eslint/parser': ^5.33.0
@@ -45,6 +46,7 @@ importers:
       eslint-plugin-json: ^3.1.0
       eslint-plugin-prettier: ^4.2.1
       eslint-plugin-vue: ^9.3.0
+      fs-extra: ^10.1.0
       happy-dom: ^6.0.4
       husky: ^8.0.1
       prettier: ^2.7.1
@@ -68,6 +70,7 @@ importers:
       eslint-plugin-json: 3.1.0
       eslint-plugin-prettier: 4.2.1_po3yoeeutu52wwqsoi2mwzccke
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
+      fs-extra: 10.1.0
       husky: 8.0.1
       prettier: 2.7.1
       vite: 3.0.7
@@ -75,6 +78,7 @@ importers:
     devDependencies:
       '@iconify-json/ic': 1.1.9
       '@testing-library/vue': 6.6.1_2yymnzrok6eda47acnj2yjm3ae
+      '@types/fs-extra': 9.0.13
       '@types/node': 18.7.2
       '@unocss/preset-attributify': 0.35.4
       '@unocss/preset-icons': 0.30.13
@@ -977,6 +981,12 @@ packages:
 
   /@types/form-data/0.0.33:
     resolution: {integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==}
+    dependencies:
+      '@types/node': 18.7.2
+    dev: true
+
+  /@types/fs-extra/9.0.13:
+    resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
       '@types/node': 18.7.2
     dev: true

@@ -3,7 +3,7 @@
 
 
 echo ====代码静态检查====
-cd packages/mo-ui-vite
+cd packages/mo-ui
 pnpm lint
 
 cd ../../

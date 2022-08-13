@@ -1,5 +1,5 @@
 {
-  "name": "mo-ui-vite",
+  "name": "mo-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -38,7 +38,8 @@
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "vite": "^3.0.5",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "fs-extra": "^10.1.0"
   },
   "devDependencies": {
     "@iconify-json/ic": "^1.1.8",
@@ -52,6 +53,7 @@
     "unocss": "^0.33.4",
     "vitepress": "^0.22.4",
     "vitepress-theme-demoblock": "^1.4.2",
-    "vitest": "^0.21.1"
+    "vitest": "^0.21.1",
+    "@types/fs-extra": "^9.0.13"
   }
 }
