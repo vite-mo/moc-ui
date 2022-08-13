@@ -8,7 +8,7 @@ on:
       - publish
   schedule:
     - cron: '0 2 * * *'
-​
+
 jobs:
   publish:
     runs-on: ubuntu-latest
